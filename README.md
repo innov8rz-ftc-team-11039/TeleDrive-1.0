@@ -11,7 +11,8 @@ The COVID-19 pandemic left FIRST Tech Challenge competitions, scrimmages, and te
 
 All of this is able to happen within 1/40 of a second, bringing the most performance with the least latency.
 
-Wondering how we did it? Check out our blog post for more info: innov8rz.net/blog/software/teledrive
+Wondering how we did it? Check out our blog post for more info: <a href="innov8rz.net/blog/software/teledrive">TeleDrive Blog Post</a>
+
 
 # Contributors
 
