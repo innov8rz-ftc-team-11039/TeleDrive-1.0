@@ -13,6 +13,33 @@ All of this is able to happen within 1/40 of a second, bringing the most perform
 
 Wondering how we did it? Check out our blog post for more info: <a href="http://www.innov8rz.net/blog/software/teledrive">TeleDrive Blog Post</a>
 
+# Installing and Usage
+
+First, you must choose a port that will be used by the Driver Controller computer ("Host Port") and another port for the robot to listen on ("Robot Port"). 
+
+>A port is an integer number
+
+There are two forms of installation of TeleDrive on your computer. In all cases, you would only install one of the following versions. The Driver Controller Side Setup is for the computer that is connected to the Gamepad via USB and will send the gamepad controls over the Internet to the Host Computer. The other side, the Host Computer Setup, is the computer near the robot which is relaying the commands it gets from the Driver Controller Side and passes it to the robot.
+
+To relay the commands to the robot, you must follow the FTC Robot Controller App Setup to enable UDP listening on the robot to move when the Driver Controller side sends commands.
+
+**Driver Controller Side Setup**
+
+The Driver Controller Side will be on the driver(s) computers. To install the part that sends commands, download the ```TeleDrive_Driver.exe```, an executable file. Now that you have installed it, running it is just as simple. All you have to do is go to Command Prompt or Terminal and go to the directory where the ```TeleDrive_Driver.exe``` executable file was installed. Then type ```TeleDrive_Driver.exe <Public IPv4 address of Host Computer> <Host Port>```. You must use the IPv4 Public Address of the Host computer, otherwise it would not work.
+
+**Host Computer Setup**
+
+Setting up the Host has been made very simple. All you have to do is install the ```TeleDrive_Host.exe```, an executable file. And that's all you have to do for installing it! There is one step, however, when calling the execuable file, you must go through Command Prompt or Terminal. Go to the directory where you installed the ```TeleDrive_Host.exe``` file and then type ```TeleDrive_Host.exe <Host Port> <Robot IP address> <Robot Port>```. Now, your host is ready to recieve commands from the Driver Controller(s).
+
+**FTC Robot Controller App Setup**
+
+To setup the FTC Robot Controller to be ready to parse all of the data sent from the Driver Controller Computers, you simply need to download the ```TeleDrive.java``` file and put it in the ```TeamCode``` part of your Robot Controller project where you would usually write your code. Now, open your TeleOp class and instead of extending ```Opmode```, you can extend our TeleDrive class. Then, to make sure that you enable the full functionality of TeleDrive, you must say ```super._____()``` in every override method of the superclass. For example, in the ```init``` override method, you would put ```super.init()``` and for the ```loop```, you would put ```super.loop()```, and so on. **Not calling the method in the superclass would not enable TeleDrive's UDP listening functionality**. The next important step is to change the local IP address of the Control Hub or Robot Controller phone which can be done by clicking on "Program and Manage" on the Driver Station phone and copy the IP address into the address variable in TeleDrive.java at line 303 and change the port any you would like (default is 11039). Your robot is now ready to listen to commands coming from the Host Computer.
+
+# Common Errors
+
+**Port #### is currently in use on your machine. Please try a different port.**
+
+This is most likely the only error you would encounter. In this case, you must change the the Host Port to another integer number as the Host computer is already using that port for another function. **Make sure you change the port on both the Driver Controller side and the Host side when calling the .exe file**
 
 # Contributors
 
@@ -25,3 +52,5 @@ Mihir Chauhan
 **Testers**
 
 Mathew Joseph
+
+© Innov8rz FTC Team 11039 | All Rights Reserved 2020
