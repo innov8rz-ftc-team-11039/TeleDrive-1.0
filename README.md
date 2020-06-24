@@ -5,7 +5,7 @@ Low Latency.
 
 Enabling remote Driver-Controlled TeleOp over the internet for FIRST Tech Challenge teams.
 
-<a href="https://www.youtube.com/watch?v=bDJbzP2qWbc&feature=youtu.be" target="_blank"><img src="https://www.youtube.com/watch?v=bDJbzP2qWbc&feature=youtu.be" alt="Unable to Load Image" width="480" height="360" border="0" /></a>
+<a href="https://www.youtube.com/watch?v=bDJbzP2qWbc&feature=youtu.be" target="_blank"><img src="http:/img.youtube.com/vi/bDJbzP2qWbc/0.jpg" alt="Unable to Load Image" width="480" height="360" border="0" /></a>
 
 # About TeleDrive
 
