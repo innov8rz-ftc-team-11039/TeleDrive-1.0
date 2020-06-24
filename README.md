@@ -27,7 +27,10 @@ To relay the commands to the robot, you must follow the FTC Robot Controller App
 
 ## Driver Controller Side Setup
 
-The Driver Controller Side will be on the driver(s) computers. To install the part that sends commands, download the ```TeleDrive_Driver.exe```, an executable file. Now that you have installed it, running it is just as simple. All you have to do is go to Command Prompt or Terminal and go to the directory where the ```TeleDrive_Driver.exe``` executable file was installed. Then type ```TeleDrive_Driver.exe <Public IPv4 address of Host Computer> <Host Port>``` on Windows and ```./TeleDrive_Driver.exe <Public IPv4 address of Host Computer> <Host Port>``` for Mac. You must use the IPv4 Public Address of the Host computer, otherwise it would not work.
+The Driver Controller Side will be on the driver(s) computers. To install the part that sends commands, download the ```TeleDrive_Driver.exe```, an executable file. Now that you have installed it, running it is just as simple. All you have to do is go to Command Prompt or Terminal and go to the directory where the ```TeleDrive_Driver.exe``` executable file was installed. Then type:
+```TeleDrive_Driver.exe <Public IPv4 address of Host Computer> <Host Port>``` (Windows)
+or ```./TeleDrive_Driver <Public IPv4 address of Host Computer> <Host Port>``` (Mac). 
+You must use the IPv4 Public Address of the Host computer, otherwise it would not work.
 
 ## Host Computer Setup
 
