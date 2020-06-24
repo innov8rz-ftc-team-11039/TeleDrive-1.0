@@ -21,16 +21,16 @@ To setup the FTC Robot Controller to be ready to parse all of the data sent from
 
 # Installation, Setup, and Usage
 
-  # Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs (hint: it's really easy!)
+  #### Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs (hint: it's really easy!)
   
-    1. Simply download ```TeleDrive.java```, and copy it into your ```TeamCode``` folder
-    2. Change your TeleOp program(s) to extend the ```TeleDrive``` class
-    3. For each OpMode function (init, init_loop, start, loop, stop) in your TeleOp class, call super.func() at the beginning of that function
-      **This is required, and not calling the method in the superclass would not allow TeleDrive to function properly**
-      Ex: in the loop() function, you must call super.loop() at the beginning
-    4. Using your Driver Station phone, navigate to the "Program and Manage" menu, and find the local IP address of the Control Hub or Robot Controller phone
-    5. On line 303 in ```TeleDrive.java```, replace the existing IP address with the IP address you found in Step 4
-    6. Optional: change the local port in ```TeleDrive.java``` at line 303 (default is 11039)
+  1. Simply download ```TeleDrive.java```, and copy it into your ```TeamCode``` folder
+  2. Change your TeleOp program(s) to extend the ```TeleDrive``` class
+  3. For each OpMode function (init, init_loop, start, loop, stop) in your TeleOp class, call super.func() at the beginning of that function
+  **This is required, and not calling the method in the superclass would not allow TeleDrive to function properly**
+  Ex: in the loop() function, you must call super.loop() at the beginning
+  4. Using your Driver Station phone, navigate to the "Program and Manage" menu, and find the local IP address of the Control Hub or Robot Controller phone
+  5. On line 303 in ```TeleDrive.java```, replace the existing IP address with the IP address you found in Step 4
+  6. Optional: change the local port in ```TeleDrive.java``` at line 303 (default is 11039)
 
 1. Choose a port that will be used by the Driver Controller computer ("Host Port") and another port for the robot to listen on ("Robot Port"). 
 
