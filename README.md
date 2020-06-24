@@ -60,7 +60,7 @@ Video live streaming is done using an industry leader in low latency live stream
 
 To set up the Parsec on your computer, go to <a href="https://parsecgaming.com/downloads/" target="_blank">Parsec Downloads</a> and click on your Operating System. Once it is done installing, create and verify an account and you are ready to stream or join a live stream! 
 
-#### Note: To start a live stream quickly, make the accounts that are on the Driver Computers as "Parsec friends" with the account of the Host Computer and you can easily accept them into your live stream.
+**Note: To start a live stream quickly, make the accounts that are on the Driver Computers as "Parsec friends" with the account of the Host Computer and you can easily accept them into your live stream.**
 
   ### Communication
 
