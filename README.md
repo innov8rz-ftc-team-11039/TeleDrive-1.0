@@ -35,7 +35,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   
   Now, your host is ready to recieve commands from the Driver Controller(s).
   
-  #### Setup Port Forwarding on the Host Computer's WiFi router
+  #### Part 3: Setup Port Forwarding on the Host Computer's WiFi router
 
   To allow the driver controller side to send commands to the host computer, you must allow port forwarding the WiFi router that the host computer is connected to. This is done by loging in to your WiFi router, locating the port forwarding options, enabling Port Forwarding, and setting the following: 
   
