@@ -74,7 +74,7 @@ This is most likely the only error you would encounter. In this case, you must c
 
   ### Nothing happens when I call all of the .exe files and the Robot Controller is running
 
-Make sure to check if Port Forwarding is enabled on your WiFi router and that the ports and protocol are all correct (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#part-3-setup-port-forwarding-on-the-host-computers-wifi-router" target="_blank">Setup Port Forwarding on WiFi router</a>). Another issue may be that the ports and IP addresses may be inconsistent (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive#install-and-setup-remote-robot-control" target="_blank">Install and Setup: Remote Robot Control</a>). You can also check if you have correctly entered in the ports as integer numbers.
+Make sure to check if Port Forwarding is enabled on your WiFi router and that the ports and protocol are all correct (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#part-3-setup-port-forwarding-on-the-host-computers-wifi-router" target="_blank">Setup Port Forwarding on WiFi router</a>). Another issue may be that the ports and IP addresses may be inconsistent (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#installation-setup-and-usage" target="_blank">Install and Setup: TeleDrive</a>). You can also check if you have correctly entered in the ports as integer numbers.
 
   ### Cannot host a Parsec server
 
