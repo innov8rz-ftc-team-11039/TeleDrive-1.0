@@ -5,7 +5,7 @@ Low Latency.
 
 Enabling remote Driver-Controlled TeleOp over the internet for FIRST Tech Challenge teams.
 
-<!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=gdEGrdmpl5o" target="_blank"><img src="http://img.youtube.com/vi/gdEGrdmpl5o/0.jpg" alt="Unable to Load Image" width="480" height="360" border="0" /></a> -->
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=gdEGrdmpl5o" target="_blank"><img src="http://img.youtube.com/vi/gdEGrdmpl5o/0.jpg" alt="Unable to Load Image" width="480" height="360" border="0" /></a>
 
 # About TeleDrive
 
@@ -26,7 +26,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   5. On line 303 in ```TeleDrive.java```, replace the existing IP address with the IP address you found in Step 4
   6. Optional: change the local port in ```TeleDrive.java``` at line 303 (default is 11039) **Note: a port is an integer number.**
 
-  #### Part 2: Setup the Host Computer (a computer that's in the same physical location as the robot) with TeleDrive_Host
+  #### Part 2: Setup the Host Computer (a computer that's in the same physical location as the robot) with ```TeleDrive_Host```
 
   1. On the Host Computer, download ```TeleDrive_Host.exe``` (for Windows) or ```TeleDrive_Host``` (for Mac)
   2. Plug in a USB WiFi adapter to the Host Computer
@@ -34,6 +34,15 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   4. Start the executable file by typing ```TeleDrive_Host.exe <Host Port> <Robot IP address> <Robot Port>``` (in Command Prompt on Windows) or ```./TeleDrive_Host <Host Port> <Robot IP address> <Robot Port>``` (in Terminal on Mac).
   
   Now, your host is ready to recieve commands from the Driver Controller(s).
+  
+  #### Setup Port Forwarding on the Host Computer's WiFi router
+
+  To allow the driver controller side to send commands to the host computer, you must allow port forwarding the WiFi router that the host computer is connected to. This is done by loging in to your WiFi router, locating the port forwarding options, enabling Port Forwarding, and setting the following: 
+  
+  * External Port: Pick a port that other users can connect to via the internet
+  * Local IP: Your Host Computer's local IP address (use ipconfig or ifconfig to find this)
+  * Local Port: This is the port that you typed in the previous part (Ex: ```./TeleDrive_Host 11039 "192.168.43.1" 12345``` --> 11039)
+  * Protocol: UDP
 
 There are two forms of installation of TeleDrive on your computer. In all cases, you would only install one of the following versions. The Driver Controller Side Setup is for the computer that is connected to the Gamepad via USB and will send the gamepad controls over the Internet to the Host Computer. The other side, the Host Computer Setup, is the computer near the robot which is relaying the commands it gets from the Driver Controller Side and passes it to the robot.
 
@@ -49,12 +58,6 @@ or ```./TeleDrive_Driver <Public IPv4 address of Host Computer> <Host Port>``` (
 
 You must use the IPv4 Public Address of the Host computer, otherwise it would not work.
 
-## Host Computer Setup
-
-
-## Setup Port Forwarding on WiFi router
-
-To allow the driver controller side to send commands to the host computer, you must allow port forwarding the WiFi router that the host computer is connected to. This is done by loging in to your WiFi router, locate the port forwarding options, enable Port Forwarding, and set the following: External Port, Local IP, Local Port, and protocol to UDP. External Port, Local IP, and Local Port are different between computers so make sure to check it before hand.
 
 # Install and Setup: Video Live Stream of Playing Field
 
