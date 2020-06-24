@@ -56,39 +56,39 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
 
 Video live streaming is done using an industry leader in low latency live streaming: Parsec Gaming. **The host computer for this application (the one connected to webcam and is streaming video) must be Windows**. Client computers, however, can be either Windows or Mac. 
 
-## Parsec Setup
+  ### Parsec Setup
 
 To set up the Parsec on your computer, go to <a href="https://parsecgaming.com/downloads/" target="_blank">Parsec Downloads</a> and click on your Operating System. Once it is done installing, create and verify an account and you are ready to stream or join a live stream! 
 
 #### Note: To start a live stream quickly, make the accounts that are on the Driver Computers as "Parsec friends" with the account of the Host Computer and you can easily accept them into your live stream.
 
-## Communication
+  ### Communication
 
 **Parsec, unfortunately, does not allow audio communication in its application**. However, other reliable communication methods include Discord calls, phone calls, and more. Some services like Zoom may have more latency than others.
 
 # Common Errors
 
-## Port #### is currently in use on your machine. Please try a different port.
+  ### Port ____ is currently in use on your machine. Please try a different port.
 
 This is most likely the only error you would encounter. In this case, you must change the the Host Port to another integer number as the Host computer is already using that port for another function. **Make sure you change the port on both the Driver Controller side and the Host side when calling the .exe file**
 
-## Nothing happens when I call all of the .exe files and the Robot Controller is running
+  ### Nothing happens when I call all of the .exe files and the Robot Controller is running
 
 Make sure to check if Port Forwarding is enabled on your WiFi router and that the ports and protocol are all correct (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#setup-port-forwarding-on-wifi-router" target="_blank">Setup Port Forwarding on WiFi router</a>). Another issue may be that the ports and IP addresses may be inconsistent (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive#install-and-setup-remote-robot-control" target="_blank">Install and Setup: Remote Robot Control</a>). You can also check if you have correctly entered in the ports as integer numbers (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#note-a-port-is-an-integer-number" target="_blank">Port Setup</a>)
 
-## Cannot host a Parsec server
+  ### Cannot host a Parsec server
 
 Parsec servers only run on Windows computers, so if you are using a Mac, it wouldn't be allowed. Clients, on the other hand, can run on any operating system.
 
 # Contributors
 
-## Developers
+  ### Developers
 
 Avikam Chauhan
 
 Mihir Chauhan
 
-## Testers
+  ### Testers
 
 Mathew Joseph
 
