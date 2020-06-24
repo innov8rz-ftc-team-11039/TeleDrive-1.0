@@ -80,6 +80,15 @@ Make sure to check if Port Forwarding is enabled on your WiFi router and that th
 
 Parsec servers only run on Windows computers, so if you are using a Mac, it wouldn't be allowed. Clients, on the other hand, can run on any operating system.
 
+  ### Something else is wrong
+  
+If you've tried all the solutions listed above, and TeleDrive still doesn't work for you, please try to do the following:
+
+  * ```chmod +x TeleDrive```
+  * Ensure the Terminal / Command Prompt has proper access to monitor input devices
+  * Restart Terminal / Command Prompt and / or your computer
+  * Send us an email at info@innov8rz.net and we will be happy to help!
+
 # Contributors
 
   ### Developers
