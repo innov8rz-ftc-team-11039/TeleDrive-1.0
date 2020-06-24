@@ -51,15 +51,27 @@ To set up the Parsec host on your Windows computer, go to <a href="https://parse
 
 **Parsec Client Setup**
 
-To set up the Parsec client on your computer, go to <a href="https://parsecgaming.com/downloads/" target="_blank">Parsec Downloads</a> and click on the corresponding Operating System. Once it is done installing, create and verify an account and you are ready to join a live stream! 
+To set up the Parsec client on your computer, go to <a href="https://parsecgaming.com/downloads/" target="_blank">Parsec Downloads</a> and click on the corresponding operating system. Once it is done installing, create and verify an account and you are ready to join a live stream! 
 
 >Note: To join a live stream quicker, become a "Parsec friend" with the account on the Host computer and you can quickly join into their live stream.
+
+**Communication**
+
+**Parsec, unfortunately, does not allow audio communication in its application**. However, other reliable communication methods include Discord calls, Phone calls, and more. Some services like Zoom may have more latency than others.
 
 # Common Errors
 
 **Port #### is currently in use on your machine. Please try a different port.**
 
 This is most likely the only error you would encounter. In this case, you must change the the Host Port to another integer number as the Host computer is already using that port for another function. **Make sure you change the port on both the Driver Controller side and the Host side when calling the .exe file**
+
+**Nothing happens when I call all of the .exe files and the Robot Controller is running**
+
+Make sure to check if Port Forwarding is enabled on your WiFi router and that the ports and protocol are all correct (see "Setup Port Forwarding on WiFi router"). Another issue may be that the ports and IP addresses may be inconsistent (see "Install and Setup: Remote Robot Control"). You can also check if you have correctly 
+
+**I cannot host a Parsec server**
+
+Parsec servers only run on Windows computers, so if you are using a Mac, it wouldn't be allowed. Clients, on the other hand, can have any operating system.
 
 # Contributors
 
