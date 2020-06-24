@@ -17,7 +17,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
 
 # Installation, Setup, and Usage
 
-  ## Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs
+  ### Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs
   
   1. Simply download ```TeleDrive.java```, and copy it into your ```TeamCode``` folder
   2. Change your TeleOp program(s) to extend the ```TeleDrive``` class
@@ -26,7 +26,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   5. On line 303 in ```TeleDrive.java```, replace the existing IP address with the IP address you found in Step 4
   6. Optional: change the local port in ```TeleDrive.java``` at line 303 (default is 11039) **Note: a port is an integer number.**
 
-  ## Part 2: Setup the Host Computer (a computer that's in the same physical location as the robot) with ```TeleDrive_Host```
+  ### Part 2: Setup the Host Computer (a computer that's in the same physical location as the robot) with ```TeleDrive_Host```
 
   1. On the Host Computer, download ```TeleDrive_Host.exe``` (for Windows) or ```TeleDrive_Host``` (for Mac)
   2. Plug in a USB WiFi adapter to the Host Computer
@@ -35,7 +35,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   
   Now, your host is ready to recieve commands from the Driver Controller(s).
   
-  ## Part 3: Setup Port Forwarding on the Host Computer's WiFi router
+  ### Part 3: Setup Port Forwarding on the Host Computer's WiFi router
 
   To allow the driver controller side to send commands to the host computer, you must allow port forwarding the WiFi router that the host computer is connected to. This is done by loging in to your WiFi router, locating the port forwarding options, enabling Port Forwarding, and setting the following: 
   
@@ -44,7 +44,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   * Local Port: This is the first port that you typed in the previous part (Ex: ```./TeleDrive_Host 11039 "192.168.43.1" 12345``` --> 11039)
   * Protocol: UDP
 
-  ## Part 4: Setup the Driver Computer (a computer that is used to remotely control the robot) with ```TeleDrive_Driver```
+  ### Part 4: Setup the Driver Computer (a computer that is used to remotely control the robot) with ```TeleDrive_Driver```
   
   1. On the Host Computer, download ```TeleDrive_Driver.exe``` (for Windows) or ```TeleDrive_Driver``` (for Mac)
   2. Plug in a USB gamepad (ex. Logitech F310)
