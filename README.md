@@ -17,7 +17,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
 
 # Installation, Setup, and Usage
 
-  #### Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs
+  ## Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs
   
   1. Simply download ```TeleDrive.java```, and copy it into your ```TeamCode``` folder
   2. Change your TeleOp program(s) to extend the ```TeleDrive``` class
@@ -26,7 +26,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   5. On line 303 in ```TeleDrive.java```, replace the existing IP address with the IP address you found in Step 4
   6. Optional: change the local port in ```TeleDrive.java``` at line 303 (default is 11039) **Note: a port is an integer number.**
 
-  #### Part 2: Setup the Host Computer (a computer that's in the same physical location as the robot) with ```TeleDrive_Host```
+  ## Part 2: Setup the Host Computer (a computer that's in the same physical location as the robot) with ```TeleDrive_Host```
 
   1. On the Host Computer, download ```TeleDrive_Host.exe``` (for Windows) or ```TeleDrive_Host``` (for Mac)
   2. Plug in a USB WiFi adapter to the Host Computer
@@ -35,29 +35,22 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   
   Now, your host is ready to recieve commands from the Driver Controller(s).
   
-  #### Part 3: Setup Port Forwarding on the Host Computer's WiFi router
+  ## Part 3: Setup Port Forwarding on the Host Computer's WiFi router
 
   To allow the driver controller side to send commands to the host computer, you must allow port forwarding the WiFi router that the host computer is connected to. This is done by loging in to your WiFi router, locating the port forwarding options, enabling Port Forwarding, and setting the following: 
   
   * External Port: Pick a port that other users can connect to via the internet
   * Local IP: Your Host Computer's local IP address (use ipconfig or ifconfig to find this)
-  * Local Port: This is the port that you typed in the previous part (Ex: ```./TeleDrive_Host 11039 "192.168.43.1" 12345``` --> 11039)
+  * Local Port: This is the first port that you typed in the previous part (Ex: ```./TeleDrive_Host 11039 "192.168.43.1" 12345``` --> 11039)
   * Protocol: UDP
 
-There are two forms of installation of TeleDrive on your computer. In all cases, you would only install one of the following versions. The Driver Controller Side Setup is for the computer that is connected to the Gamepad via USB and will send the gamepad controls over the Internet to the Host Computer. The other side, the Host Computer Setup, is the computer near the robot which is relaying the commands it gets from the Driver Controller Side and passes it to the robot.
+  ## Part 4: Setup the Driver Computer (a computer that is used to remotely control the robot) with ```TeleDrive_Driver```
+  
+  1. On the Host Computer, download ```TeleDrive_Driver.exe``` (for Windows) or ```TeleDrive_Driver``` (for Mac)
+  2. Plug in a USB gamepad (ex. Logitech F310)
+  3. Start the executable file by typing ```TeleDrive_Driver.exe <Public IPv4 address of Host Computer> <Host Port>``` (in Command Prompt on Windows) or ```./TeleDrive_Driver <Public IPv4 address of Host Computer> <Host Port>``` (in Terminal on Mac).
 
-To relay the commands to the robot, you must follow the FTC Robot Controller App Setup to enable UDP listening on the robot to move when the Driver Controller side sends commands.
-
-## Driver Controller Side Setup
-
-The Driver Controller Side will be on the driver(s) computers. To install the part that sends commands, download the TeleDrive executable file for your computer from the Releases tab on the right side. Now that you have downloaded it, running it is just as simple. All you have to do is go to Command Prompt (Windows) or Terminal (Mac) and go to the directory where the TeleDrive_Driver executable file was installed. Then type:
-
-```TeleDrive_Driver.exe <Public IPv4 address of Host Computer> <Host Port>``` (Windows)
-
-or ```./TeleDrive_Driver <Public IPv4 address of Host Computer> <Host Port>``` (Mac). 
-
-You must use the IPv4 Public Address of the Host computer, otherwise it would not work.
-
+**You must use the public IPv4 address of the Host Computer, otherwise it would not work.**
 
 # Install and Setup: Video Live Stream of Playing Field
 
