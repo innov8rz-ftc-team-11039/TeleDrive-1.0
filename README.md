@@ -3,7 +3,7 @@
 Best performance.
 Low Latency.
 
-Enabling Driver Controlled TeleOp from the comfort of home and control your robot remotely.
+Enabling remote Driver-Controlled TeleOp over the internet for FIRST Tech Challenge teams.
 
 <!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=gdEGrdmpl5o" target="_blank"><img src="http://img.youtube.com/vi/gdEGrdmpl5o/0.jpg" alt="Unable to Load Image" width="480" height="360" border="0" /></a> -->
 
