@@ -69,7 +69,7 @@ This is most likely the only error you would encounter. In this case, you must c
 
 ## Nothing happens when I call all of the .exe files and the Robot Controller is running
 
-Make sure to check if Port Forwarding is enabled on your WiFi router and that the ports and protocol are all correct (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#setup-port-forwarding-on-wifi-router" target="_blank">Setup Port Forwarding on WiFi router</a>). Another issue may be that the ports and IP addresses may be inconsistent (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive#install-and-setup-remote-robot-control" target="_blank">Install and Setup: Remote Robot Control</a>). You can also check if you have correctly entered in the ports as integer numbers (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#a-port-is-an-integer-number" target="_blank">Port Setup</a>)
+Make sure to check if Port Forwarding is enabled on your WiFi router and that the ports and protocol are all correct (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#setup-port-forwarding-on-wifi-router" target="_blank">Setup Port Forwarding on WiFi router</a>). Another issue may be that the ports and IP addresses may be inconsistent (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive#install-and-setup-remote-robot-control" target="_blank">Install and Setup: Remote Robot Control</a>). You can also check if you have correctly entered in the ports as integer numbers (see <a href="https://github.com/innov8rz-ftc-team-11039/TeleDrive/blob/master/README.md#note-a-port-is-an-integer-number" target="_blank">Port Setup</a>)
 
 ## I cannot host a Parsec server
 
