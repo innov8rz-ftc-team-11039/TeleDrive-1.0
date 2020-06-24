@@ -17,18 +17,23 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
 
 # Installation, Setup, and Usage
 
-  #### Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs (hint: it's really easy!)
+  #### Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs
   
   1. Simply download ```TeleDrive.java```, and copy it into your ```TeamCode``` folder
   2. Change your TeleOp program(s) to extend the ```TeleDrive``` class
   3. For each OpMode function (init, init_loop, start, loop, stop) in your TeleOp class, call super.func() at the beginning of that function. **This is required, and not calling the method in the superclass would not allow TeleDrive to function properly.** (Ex: in the loop() function, you must call super.loop() at the beginning)
   4. Using your Driver Station phone, navigate to the "Program and Manage" menu, and find the local IP address of the Control Hub or Robot Controller phone
   5. On line 303 in ```TeleDrive.java```, replace the existing IP address with the IP address you found in Step 4
-  6. Optional: change the local port in ```TeleDrive.java``` at line 303 (default is 11039)
+  6. Optional: change the local port in ```TeleDrive.java``` at line 303 (default is 11039) **Note: a port is an integer number.**
 
-1. Choose a port that will be used by the Driver Controller computer ("Host Port") and another port for the robot to listen on ("Robot Port"). 
+  #### Part 2: Setup the Host Computer (a computer that's in the same physical location as the robot) with TeleDrive_Host
 
-#### Note: A port is an integer number
+  1. On the Host Computer, download ```TeleDrive_Host.exe``` (for Windows) or ```TeleDrive_Host``` (for Mac)
+  2. Plug in a USB WiFi adapter to the Host Computer
+  3. Connect the secondary WiFi (WiFi 2) to the Control Hub or Robot Controller, and ensure that WiFi 1 is connected to your local router
+  4. Start the executable file by typing ```TeleDrive_Host.exe <Host Port> <Robot IP address> <Robot Port>``` (in Command Prompt on Windows) or ```./TeleDrive_Host <Host Port> <Robot IP address> <Robot Port>``` (in Terminal on Mac).
+  
+  Now, your host is ready to recieve commands from the Driver Controller(s).
 
 There are two forms of installation of TeleDrive on your computer. In all cases, you would only install one of the following versions. The Driver Controller Side Setup is for the computer that is connected to the Gamepad via USB and will send the gamepad controls over the Internet to the Host Computer. The other side, the Host Computer Setup, is the computer near the robot which is relaying the commands it gets from the Driver Controller Side and passes it to the robot.
 
@@ -46,7 +51,6 @@ You must use the IPv4 Public Address of the Host computer, otherwise it would no
 
 ## Host Computer Setup
 
-Setting up the Host has been made very simple. All you have to do is install the ```TeleDrive_Host.exe```, an executable file. Now, connect a USB WiFi Adapter on the host computer. Connect WiFi 2 to the Robot Controller or Control Hub and make sure that WiFi 1 is connected to the correct router in which port forwarding is enable (more about Port Forwarding in the next section). Then you must call the execuable file, by using Command Prompt or Terminal. Go to the directory where you installed the ```TeleDrive_Host.exe``` file and then type ```TeleDrive_Host.exe <Host Port> <Robot IP address> <Robot Port>``` on Windows and ```./TeleDrive_Host.exe <Host Port> <Robot IP address> <Robot Port>``` for Mac. Now, your host is ready to recieve commands from the Driver Controller(s).
 
 ## Setup Port Forwarding on WiFi router
 
