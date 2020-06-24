@@ -15,10 +15,6 @@ All of this is able to happen within 1/40 of a second, bringing the most perform
 
 Wondering how we did it? Check out our blog post for more info: <a href="http://www.innov8rz.net/blog/software/teledrive" target="_blank">TeleDrive Blog Post</a>
 
-## FTC Robot Controller App Setup
-
-To setup the FTC Robot Controller to be ready to parse all of the data sent from the Driver Controller Computers, you simply need to download the ```TeleDrive.java``` file and put it in the ```TeamCode``` part of your Robot Controller project where you would usually write your code. Now, open your TeleOp class and instead of extending ```Opmode```, you can extend our TeleDrive class. Then, to make sure that you enable the full functionality of TeleDrive, you must say ```super._____()``` in every override method of the superclass. For example, in the ```init``` override method, you would put ```super.init()``` and for the ```loop```, you would put ```super.loop()```, and so on. **Not calling the method in the superclass would not enable TeleDrive's UDP listening functionality**. The next important step is to change the local IP address of the Control Hub or Robot Controller phone which can be done by clicking on "Program and Manage" on the Driver Station phone and copy the IP address into the address variable in TeleDrive.java at line 303 and change the port any you would like (default is 11039). Your robot is now ready to listen to commands coming from the Host Computer.
-
 # Installation, Setup, and Usage
 
   #### Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs (hint: it's really easy!)
