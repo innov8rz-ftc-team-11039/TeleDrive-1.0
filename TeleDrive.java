@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.TeleOp;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 
@@ -302,6 +302,7 @@ public abstract class TeleDrive extends OpMode {
     public void init() {
         String address = "192.168.43.1";
         int port = 11039;
+        canRunGamepadThread = false;
 
         try {
             this.socket = new DatagramSocket(port);
@@ -316,8 +317,10 @@ public abstract class TeleDrive extends OpMode {
 
     @Override
     public void loop() {
-        canRunGamepadThread = true;
-        startGamepadHandlerThread();
+        if(!canRunGamepadThread) {
+            canRunGamepadThread = true;
+            startGamepadHandlerThread();
+        }
     }
 
     @Override
