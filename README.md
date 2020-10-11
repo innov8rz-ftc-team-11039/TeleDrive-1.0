@@ -5,7 +5,7 @@ Low Latency.
 
 Enabling remote Driver-Controlled TeleOp over the internet for FIRST Tech Challenge teams.
 
-# Check out our <a href="https://docs.google.com/presentation/d/18ZHFcut6WFlPbEkeKGT0d-_zd0nnsIz-sDnQQjsATh8/edit#slide=id.g9b16284dde_0_6" target="_blank">new slideshow</a> showing a step by step guide for how to Implement TeleDrive onto your FTC robot
+# Check out our <a href="https://docs.google.com/presentation/d/e/2PACX-1vSsrNgF_WeQZNVRJkxBSlO4nZ6qbVMfncyxo3cWJJP19eiQIm0eBNimrvy3-bC_PV3KszXy0imI3GCp/pub?start=false&loop=false&delayms=3000" target="_blank">new slideshow</a> showing a step by step guide for how to Implement TeleDrive onto your FTC robot
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bDJbzP2qWbc" target="_blank"><img src="http://img.youtube.com/vi/bDJbzP2qWbc/0.jpg" alt="Unable to Load Image" width="480" height="360" border="0" /></a>
 
