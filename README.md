@@ -21,6 +21,8 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
 
   ### Part 1: Integrate ```TeleDrive.java``` with your existing TeleOp programs
   
+  If you are planning on using TeleDrive in a LinearOpMode, you only need to download that file and add your code under the comment that says "CUSTOM CODE GOES HERE". Steps 1 through 6 in this section are only for using TeleDrive in an IterativeOpMode
+  
   1. Simply download ```TeleDrive.java```, and copy it into your ```TeamCode``` folder
   2. Change your TeleOp program(s) to extend the ```TeleDrive``` class
   3. For each OpMode function (init, init_loop, start, loop, stop) in your TeleOp class, call super.func() at the beginning of that function. **This is required, and not calling the method in the superclass would not allow TeleDrive to function properly.** (Ex: in the loop() function, you must call super.loop() at the beginning)
