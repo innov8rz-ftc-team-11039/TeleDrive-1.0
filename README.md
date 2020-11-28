@@ -49,7 +49,7 @@ Wondering how we did it? Check out our blog post for more info: <a href="http://
   ### Part 4: Setup the Driver Computer (a computer that is used to remotely control the robot) with ```TeleDrive_Driver```
   
   1. On the Host Computer, download ```TeleDrive_Driver.exe``` (for Windows) or ```TeleDrive_Driver``` (for Mac)
-  2. Plug in a USB gamepad (ex. Logitech F310)
+  2. Plug in a USB gamepad (ex. Logitech F310). **Make sure that the switch on the bottom of the gamepad is switched to "D" not "X"**
   3. Start the executable file by typing ```TeleDrive_Driver.exe <Public IPv4 address of Host Computer> <Host Port>``` (in Command Prompt on Windows) or ```./TeleDrive_Driver <Public IPv4 address of Host Computer> <Host Port>``` (in Terminal on Mac).
 
 **You must use the public IPv4 address of the Host Computer, otherwise it would not work.**
@@ -81,6 +81,10 @@ Make sure to check if Port Forwarding is enabled on your WiFi router and that th
   ### Cannot host a Parsec server
 
 Parsec servers only run on Windows computers, so if you are using a Mac, it wouldn't be allowed. Clients, on the other hand, can run on any operating system.
+
+  ### Gamepad Commands seem incorrect
+  
+Make sure to check that the switch on the bottom of the Driver's controllers are switched to "D".
 
   ### Something else is wrong
   
