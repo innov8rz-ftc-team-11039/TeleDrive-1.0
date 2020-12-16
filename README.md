@@ -86,7 +86,7 @@ Parsec servers only run on Windows computers, so if you are using a Mac, it woul
 
   ### Gamepad Commands seem incorrect
   
-Make sure to check that the switch on the bottom of the Driver's controllers are switched to "D".
+Make sure to check that the switch on the bottom of the Driver's controllers are switched to "D" for "Duel".
 
   ### Something else is wrong
   
@@ -96,6 +96,18 @@ If you've tried all the solutions listed above, and TeleDrive still doesn't work
   * Ensure the Terminal / Command Prompt has proper access to monitor input devices
   * Restart Terminal / Command Prompt and / or your computer
   * Send us an email at info@innov8rz.net and we will be happy to help!
+  
+# Update: We are working on fixing bug on MacOS Big Sur creating the following stacktrace.
+
+```
+Remote Drive is Starting...
+
+Traceback (most recent call last):
+  
+File "site-packages/pyglet/__init__.py", line 334, in __getattr__
+
+AttributeError: 'NoneType' object has no attribute 'get_joysticks'
+```
 
 # Contributors
 
