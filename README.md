@@ -86,7 +86,11 @@ Parsec servers only run on Windows computers, so if you are using a Mac, it woul
 
   ### Gamepad Commands seem incorrect
   
-Make sure to check that the switch on the bottom of the Driver's controllers are switched to "D" for "Duel".
+Make sure to check that the switch on the bottom of the Driver's controllers are switched to "D" for "Dual".
+
+  ### The commands are being recieved on the host computer, but the robot is not moving
+  
+ Make sure to click Start + A (or Start + B) just as you would if you were driving the robot in real-life.
 
   ### Something else is wrong
   
