@@ -90,18 +90,11 @@ Make sure to check that the switch on the bottom of the Driver's controllers are
 
   ### The commands are being recieved on the host computer, but the robot is not moving
   
- Make sure to click Start + A (or Start + B) just as you would if you were driving the robot in real-life.
+Make sure to click Start + A (or Start + B) just as you would if you were driving the robot in real-life.
+ 
+  ### TeleDrive is not working on MacOS Big Sur:
 
-  ### Something else is wrong
-  
-If you've tried all the solutions listed above, and TeleDrive still doesn't work for you, please try to do the following:
-
-  * ```chmod +x TeleDrive```
-  * Ensure the Terminal / Command Prompt has proper access to monitor input devices
-  * Restart Terminal / Command Prompt and / or your computer
-  * Send us an email at info@innov8rz.net and we will be happy to help!
-  
-# Update: We are working on fixing bug on MacOS Big Sur creating the following stacktrace.
+If you see the following stacktrace after updating to MacOS Big Sur:
 
 ```
 Remote Drive is Starting...
@@ -112,6 +105,17 @@ File "site-packages/pyglet/__init__.py", line 334, in __getattr__
 
 AttributeError: 'NoneType' object has no attribute 'get_joysticks'
 ```
+
+  * Please download the latest release of TeleDrive
+
+  ### Something else is wrong
+  
+If you've tried all the solutions listed above, and TeleDrive still doesn't work for you, please try to do the following:
+
+  * ```chmod +x TeleDrive```
+  * Ensure the Terminal / Command Prompt has proper access to monitor input devices
+  * Restart Terminal / Command Prompt and / or your computer
+  * Send us an email at info@innov8rz.net and we will be happy to help!
 
 # Contributors
 
@@ -125,11 +129,11 @@ Mihir Chauhan
 
 Mathew Joseph
 
-  ### Disclaimer -
+# Disclaimer:
 
 The camera feed is handled through Parsec or Zoom or whichever service you choose to use.
 Our software does not connect to camera, it only sends the gamepad control commands over the internet.
 
-- Coach Innov8rz
+Coach Innov8rz
 
 © Innov8rz FTC Team 11039 | All Rights Reserved 2020
