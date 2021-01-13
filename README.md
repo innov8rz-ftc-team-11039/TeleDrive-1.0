@@ -107,6 +107,7 @@ AttributeError: 'NoneType' object has no attribute 'get_joysticks'
 ```
 
   * Please download the latest release of TeleDrive
+  * If Terminal does not allow you to run TeleDrive due to security restrictions, please allow TeleDrive to launch by going to System Preferences > Security and Privacy and clicking allow (at the bottom of the window) so that you can run TeleDrive.
 
   ### Something else is wrong
   
