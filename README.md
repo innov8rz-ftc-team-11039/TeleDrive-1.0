@@ -134,6 +134,6 @@ Mathew Joseph
 The camera feed is handled through Parsec or Zoom or whichever service you choose to use.
 Our software does not connect to camera, it only sends the gamepad control commands over the internet.
 
-Coach Innov8rz
+- Coach Innov8rz
 
 © Innov8rz FTC Team 11039 | All Rights Reserved 2020
