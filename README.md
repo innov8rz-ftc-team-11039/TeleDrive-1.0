@@ -1,7 +1,7 @@
 # TeleDrive
 
 Best performance.
-Low Latency.
+Low latency.
 
 Enabling remote Driver-Controlled TeleOp over the internet for FIRST Tech Challenge teams.
 
