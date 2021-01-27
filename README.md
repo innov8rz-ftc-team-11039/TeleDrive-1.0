@@ -5,7 +5,9 @@ Low latency.
 
 Enabling remote Driver-Controlled TeleOp over the internet for FIRST Tech Challenge teams.
 
-# Check out our <a href="https://docs.google.com/presentation/d/e/2PACX-1vSsrNgF_WeQZNVRJkxBSlO4nZ6qbVMfncyxo3cWJJP19eiQIm0eBNimrvy3-bC_PV3KszXy0imI3GCp/pub?start=false&loop=false&delayms=3000" target="_blank">new slideshow</a> showing a step by step guide for how to implement TeleDrive onto your FTC robot
+## Important Update for Mac Users: Download latest release for using in MacOS Big Sur.
+
+### Check out our <a href="https://docs.google.com/presentation/d/e/2PACX-1vSsrNgF_WeQZNVRJkxBSlO4nZ6qbVMfncyxo3cWJJP19eiQIm0eBNimrvy3-bC_PV3KszXy0imI3GCp/pub?start=false&loop=false&delayms=3000" target="_blank">slideshow</a> for a detailed guide for how to implement TeleDrive onto your FTC robot
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bDJbzP2qWbc" target="_blank"><img src="http://img.youtube.com/vi/bDJbzP2qWbc/0.jpg" alt="Unable to Load Image" width="480" height="360" border="0" /></a>
 
